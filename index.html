@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
       <style>
-         .myDiv {
-            border: 4px inset rgba(7,54,66,1.0);;
-            background-color: rgba(20,22,34,0.95);
+         .terminalText {
+            background-color: rgba(20,22,34,0.96);
+            text-align: left;
+            margin: auto;
+            width: 75%;
+            border-radius: 0px 0px 12px 12px;
+            border: 1px inset #3b3b3b;
+            box-sizing: border-box;
+            padding: 10px;
+            line-height: 5px;
+            height: 500px;
+            font-family: Hack, monospace;
+            color: #ffffff;
+         }
+
+         .parentDiv {
             text-align: center;
             margin: auto;
             width: 75%;
+            display: flex; 
+            flex-direction: column;
+            gap: 0;
+         }
+
+         .childDiv {
+            width: 100%;
+         }
+
+         .header {
+            background-color: rgba(20,22,34,1.0);
+            height: 80px;
+            border: 1px inset #3b3b3b;
+            border-radius: 12px 12px 0 0;
+            font-family: Hack, monospace;
+            color: #ffffff;
+            display: inline-flex;
+            padding: 10px;
+            margin: auto;
+            box-sizing: border-box;
+         }
+
+         .circleDiv {
+            background-color: #7a434d;
+         }
+
+         #redCircle {
+            width: 14px;
+            height: 14px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            background: #bf616a;
+            display: inline-flex;
+         }
+
+         #blueCircle {
+            width: 14px;
+            height: 14px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            background: #81a1c1;
+            display: inline-flex;
+         }
+
+         #greenCircle {
+            width: 14px;
+            height: 14px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            background: #a3be8c;
+            display: inline-flex;
+         }
+
+         #yellowCircle {
+            width: 14px;
+            height: 14px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            background: #ebcb8b;
+            display: inline-flex;
          }
 
          body{
@@ -29,12 +108,61 @@
    </head>
    <body>
 
-      <div class="myDiv">
-         <h1>Bonvenon al mia retejo!</h1>
-         <p>Kiel vi fartas hodiaûe?</p>
-         <p>Kiel beliĝi ĉi tion mdr</p>
-         <a href="./film-photos.html">Fotografioj</a>
+      <div class="parentDiv">
+
+         <div class="header childDiv">
+
+            <div style="float:right"> &nbsp;&nbsp; </div>
+            <div id="blueCircle"; style="float:left"></div>
+
+            <div class="childDiv"; style="float:center"><small><small>
+               websitethingy: bash —— Konsole
+            </small></small></div>
+
+            
+
+            <div id="yellowCircle"; style="float:right"></div>
+            <div style="float:right"> &nbsp; </div>
+            <div id="greenCircle"; style="float:right"></div>
+            <div style="float:right"> &nbsp; </div>
+            <div id="redCircle"; style="float:right"></div>
+
+            
+            
+
+            <!-- <p style="float:center;"><small>
+               websitethingy: bash —— Konsole
+            </small></p> -->
+
+
+
+            <!-- <p style="float:left;"><small>
+               websitethingy: bash —— Konsole
+            </small></p> -->
+            
+         </div>
+
+
+
+         
+
+         <div class="terminalText childDiv"> 
+            <p>
+               <span style="color: #009696;font-weight:bold">[danyak@whatisthis websitethingy]</span>$
+               ls | grep "funy"
+            </p>
+             
+            <p>this-will-be-a-page &nbsp; this-too &nbsp; and-this</p>
+
+            <p>
+               <span style="color: #009696;font-weight:bold">[danyak@whatisthis websitethingy]</span>$
+               ls | grep "serious'd"
+             </p>
+             
+            <p>this-will-be-a-page &nbsp; this-too &nbsp; and-this</p>
+         </div>
       </div>
+      
 
    </body>
 </html>
